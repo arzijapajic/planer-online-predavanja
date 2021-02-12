@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Unos rasporeda</title>
+    <link rel="stylesheet" href="./unosRasporeda.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <form action="#">
+                <label for="fname">Naziv predmeta: </label><br>
+                <input type="text" pattern="^(\w+\d*)$" required name="naziv"><br>
+                <label for="lname">Aktivnost:</label><br>
+                <input type="text" pattern="^([Pp]redavanje|[Vv]je[zž]be)$" required name="aktivnost"><br>
+                <label for="lname">Dan:</label><br>
+                <input type="text" pattern="^([Pp]onedjeljak|[Uu]torak|[Ss]rijeda|[CČc]etvrtak|[Pp]etak)$" required
+                    name="dan"><br>
+                <label for="lname">Vrijeme pocetka:</label><br>
+                <input type="time" pattern="^([0-1][0-9]|[2][0-3]):([0-5][0-9])$" placeholder="HH:MM" required
+                    name="pocetak"><br>
+                <label for="lname">Vrijeme kraja:</label><br>
+                <input type="time" pattern="^([0-1][0-9]|[2][0-3]):([0-5][0-9])$" placeholder="HH:MM" required
+                    name="kraj"><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="item">
+            <h4>Predmeti</h4>
+            <ul id="predmeti">
+
+            </ul>
+        </div>
+        <div class="item">
+            <h4>Aktivnosti</h4>
+            <ul id="aktivnosti">
+ 
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <p id="poruka"></p>
+    </div>
+
+    <script src="./unosRasporeda.js"></script>
+</body>
+
+</html>

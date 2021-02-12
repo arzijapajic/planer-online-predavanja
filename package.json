@@ -1,0 +1,19 @@
+{
+    "name": "raspored",
+    "version": "1.0.0",
+    "description": "spirala 2",
+    "main": "server.js",
+    "author": "Arzija Pajic",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mysql2": "^2.2.5",
+        "sequelize": "^6.3.5"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+    }
+}
